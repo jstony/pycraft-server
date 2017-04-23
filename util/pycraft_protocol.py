@@ -42,4 +42,4 @@ class PycraftProtocol(ServerProtocol):
         - relays chat message to all players
         """
         p_text = buff.unpack_string()
-        self.factory.send_chat('<{}>, {}'.format((self.display_name, p_text)))
+        self.factory.send_chat('<{}> {}'.format(self.display_name, p_text))
